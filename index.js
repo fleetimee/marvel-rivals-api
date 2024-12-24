@@ -1,7 +1,10 @@
 import express from "express";
+import cors from "cors";
 import * as scrapeHeroes from "./src/scrapes/scrapeHeroes.js";
 
 const app = express();
+
+app.use(cors());
 
 const port = process.env.PORT || 3000;
 
